@@ -12,19 +12,19 @@ function encodeLine(str) {
   let count = 1;
   let newString = '';
 
-  str = str.split('');
+  const string = str.split('');
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === str[i + 1]) {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === string[i + 1]) {
       count += 1;
     } else {
-      newString += `${count}${str[i]}`;
+      newString += `${count}${string[i]}`;
       count = 1;
     }
   }
   // console.log(newString);
 
-  newString = newString.split('').filter(el => el !== '1').join('');
+  newString = newString.split('').filter((el) => el !== '1').join('');
   // console.log(newString);
   return newString;
 }
