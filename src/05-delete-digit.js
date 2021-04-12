@@ -9,17 +9,17 @@
  * For n = 152, the output should be 52
  *
  */
-function deleteDigit(n) {
-  let maxDigit = Number;
-  let arrFromN = String(n).split('').map(Number);
+function deleteDigit(/* n */) {
+  throw new Error('Not implemented');
 
-  maxDigit = Math.max(...arrFromN.map(function (item, i) {
-    num = arrFromN.slice();
-    num.splice(i, 1);
-    return num.join('');
-  }));
+  // let maxDigit = Number;
+  // const arrFromN = String(n).split('').map(Number);
 
-  return maxDigit;
+  // maxDigit = Math.max(...arrFromN.map((item, i) => {
+  //   arrFromN.slice().splice(i, 1).join('');
+  // }));
+
+  // return maxDigit;
 }
 
 module.exports = deleteDigit;
