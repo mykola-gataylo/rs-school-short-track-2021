@@ -10,7 +10,7 @@
  */
 function getEmailDomain(email) {
   // throw new Error('Not implemented');
-  let arr = email.split('@').reverse();
+  const arr = email.split('@').reverse();
 
   // console.log(arr[0]);
 
