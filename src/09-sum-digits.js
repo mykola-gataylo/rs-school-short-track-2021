@@ -14,13 +14,13 @@ function getSumOfDigits(n) {
   let sum = 0;
   let totalSum = 0;
 
-  n = String(n).split('').map(el => Number(el));
+  const N = String(n).split('').map((el) => Number(el));
 
-  for (let i = 0; i < n.length; i++) {
-    sum += n[i];
+  for (let i = 0; i < N.length; i++) {
+    sum += N[i];
 
     if (sum > 9) {
-      sum = String(sum).split('').map(el => Number(el));
+      sum = String(sum).split('').map((el) => Number(el));
 
       for (let k = 0; k < sum.length; k++) {
         totalSum += sum[k];
